@@ -301,7 +301,7 @@ fi
 chmod a+x tmp/$PRODUCT-$VERSION/flash-base.sh
 
 # Create the distributable package
-(cd tmp ; zip -r ../$PRODUCT-$VERSION-factory.zip $PRODUCT-$VERSION)
+(cd tmp ; tar cvf ../$PRODUCT-$VERSION-factory.tar $PRODUCT-$VERSION)
 
 # Clean up
 rm -rf tmp
